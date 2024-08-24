@@ -79,7 +79,7 @@ class Chunk(BaseModel):
     """
 
 
-    project_name: str
+    project_name: Optional[str] = None
     document_name: str
     document_type: Optional[str] = None
     content: str

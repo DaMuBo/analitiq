@@ -2,11 +2,12 @@
 
 import os
 
+import asyncio
 
 from analitiq.base.llm.BaseLlm import BaseLlm
 from analitiq.agents.search_vdb.search_vdb import SearchVdb
 from analitiq.vectordb.weaviate import WeaviateHandler
-import asyncio
+
 from dotenv import load_dotenv
 
 load_dotenv()

@@ -85,7 +85,6 @@ class DocumentChunkLoader:
 
         documents = loader.load()
         doc_lengths = {doc.metadata["source"]: len(doc.page_content) for doc in documents}
-
         python_documents = [
             doc
             for doc in documents

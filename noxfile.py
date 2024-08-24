@@ -10,6 +10,7 @@ nox.options.sessions = (
     "pylint",
     "mypy",
     "pytest",
+    "pytest_integration",
     # "coverage",
 )
 locations = "libs/analitiq", "libs/tests", "noxfile.py"
@@ -103,5 +104,5 @@ def pytest_integration(session):
         "pytest",
         "--timeout=15",
         "--capture=sys",
-        "tests/integration/",
+        "libs/tests/integration/",
     )  # in order to see output to stdout set: --capture=tee-sys
